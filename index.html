@@ -45,7 +45,7 @@ section{position:relative;overflow:hidden}
 .band{background:var(--cream);transform:rotate(-3deg);margin:-30px -30px 0 -30px;padding:10px 0;text-align:center;font-weight:600;letter-spacing:.5em;font-size:clamp(17px,5vw,24px);text-indent:.5em;position:relative;z-index:3}
 .hero-fig{position:relative;margin-top:-18px}
 .hero .sub{font-weight:800;font-size:21px;line-height:1.15;margin:22px 0 0;max-width:300px;position:relative;z-index:3}
-.hero .model{display:block;width:112%;max-width:none;margin-left:-6%;position:relative;z-index:1}
+.hero .model{display:block;width:100%;height:auto;max-width:100%;margin:0;position:relative;z-index:1}
 .pct{position:absolute;right:20px;top:100px;width:62px;height:62px;border-radius:15px;background:var(--cream);transform:rotate(18deg);display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:42px;color:var(--y);-webkit-text-stroke:2px var(--ink);z-index:4}
 .cta-hero{position:relative;z-index:5;margin-top:-6px;padding-bottom:0}
 .btn{display:block;width:100%;background:var(--ink);color:var(--y);border:0;border-radius:18px;padding:19px 22px;font:800 17px Poppins,sans-serif;letter-spacing:.04em;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 8px 0 rgba(0,0,0,.18);transition:transform .08s}
@@ -58,7 +58,7 @@ h2.anton{font-size:42px;text-align:center}
 .card{display:block;text-transform:none;letter-spacing:0;font-weight:400;font-size:16px;margin-top:0;background:var(--ink);color:var(--cream);border-radius:28px;overflow:hidden;margin-bottom:18px;cursor:pointer;position:relative;border:4px solid transparent;transition:border-color .15s,transform .15s}
 .card input{position:absolute;opacity:0;pointer-events:none}
 .card.on{border-color:var(--cream);transform:scale(1.015)}
-.card img{display:block;width:100%;height:190px;object-fit:cover;object-position:center 25%}
+.card img{display:block;width:100%;height:auto}
 .card .in{padding:18px 20px 20px}
 .card h3{font-family:Anton;text-transform:uppercase;font-size:38px;color:var(--y);line-height:1}
 .card p{font-size:15.5px;line-height:1.35;margin:6px 0 12px;opacity:.95}
@@ -112,7 +112,7 @@ footer a{color:var(--y);font-weight:600;text-decoration:none}
     <div class="band">BLACK FRIDAY</div>
     <div class="sub">3 PACOTES ESPECIAIS PARA SE CUIDAR!</div>
     <div class="hero-fig">
-      <img class="model" src="assets/modelo.jpg" alt="Cabelo escovado Fast Escova" width="920" height="618">
+      <img class="model" src="assets/modelo.jpg" alt="Cabelo escovado Fast Escova">
     </div>
     <div class="cta-hero"><a class="btn" href="#pacotes" data-track="cta_hero">Escolher meu pacote</a></div>
   </div>
@@ -127,7 +127,7 @@ footer a{color:var(--y);font-weight:600;text-decoration:none}
 
     <label class="card" data-pk="elite">
       <input type="radio" name="pacote" value="elite">
-      <img src="assets/elite.jpg" alt="Elite Hair" loading="lazy">
+      <img src="assets/elite.jpg" alt="Elite Hair" loading="lazy" width="720" height="614">
       <div class="in">
         <h3>Elite Hair</h3>
         <p><b>5 escovas</b> + <b>2 tratamentos</b> à sua escolha: hidratação ou nutrição.</p>
@@ -138,7 +138,7 @@ footer a{color:var(--y);font-weight:600;text-decoration:none}
 
     <label class="card" data-pk="glowup">
       <input type="radio" name="pacote" value="glowup">
-      <img src="assets/glowup.jpg" alt="Glow Up" loading="lazy">
+      <img src="assets/glowup.jpg" alt="Glow Up" loading="lazy" width="740" height="690">
       <div class="in">
         <h3>Glow Up</h3>
         <p><b>10 escovas</b> + <b>10 ozonioterapias</b> ou <b>10 ledterapias</b>.</p>
@@ -149,7 +149,7 @@ footer a{color:var(--y);font-weight:600;text-decoration:none}
 
     <label class="card" data-pk="unhas">
       <input type="radio" name="pacote" value="unhas">
-      <img src="assets/unhas.jpg" alt="Unhas Gold" loading="lazy">
+      <img src="assets/unhas.jpg" alt="Unhas Gold" loading="lazy" width="980" height="315">
       <div class="in">
         <h3>Unhas Gold</h3>
         <p><b>10 unhas</b> + <b>5 velaterapias</b> para manter a unha bonita por mais tempo.</p>
